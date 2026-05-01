@@ -1,0 +1,9 @@
+keras==3.9.2
+keras_nightly==3.7.0.dev2024123003
+matplotlib==3.10.9
+numpy==2.4.4
+pandas==3.0.2
+scikit_learn==1.8.0
+tensorflow==2.18.0rc2
+tensorflow==2.19.0
+tensorflow_intel==2.18.0rc2
