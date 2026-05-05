@@ -35,18 +35,7 @@ tf.compat.v1.enable_eager_execution()
 file_predicted_labels = open("prediction-result1.csv", "w")
 file_test_data = open("test-data1.csv","w")
 file_test_labels = open("test-labels1.csv","w")
-#In this example, you will train an autoencoder to detect anomalies on the ECG5000 dataset. \\
-# This dataset contains 5,000 Electrocardiograms, each with 140 data points. You will use a simplified version of the dataset, \\
-# where each example has been labeled either 0 (corresponding to an abnormal rhythm), or 1 (corresponding to a normal rhythm). You are interested in identifying the abnormal rhythms.
 
-#Note: This is a labeled dataset, so you could phrase this as a supervised learning problem.\\
-# The goal of this example is to illustrate anomaly detection concepts you can apply to larger datasets, \\
-# where you do not have labels available (for example, if you had many thousands of normal rhythms, \\
-# and only a small number of abnormal rhythms).#How will you detect anomalies using an autoencoder? \\
-# Recall that an autoencoder is trained to minimize reconstruction error.
-# \\ You will train an autoencoder on the normal rhythms only, then use it to reconstruct all the data. \\
-# Our hypothesis is that the abnormal rhythms will have higher reconstruction error.
-# You will then classify a rhythm as an anomaly if the reconstruction error surpasses a fixed threshold.
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -75,10 +64,7 @@ from tensorflow.compat.v1 import Session as sess
 #tf.compat.v1.disable_eager_execution()
 
 # Download the dataset
-#dataframe = pd.read_csv('train-11242021.csv')
-#dataframe = pd.read_csv('filterd_50_1.csv')
-#dataframe = pd.read_csv('idea-feb15..csv')
-dataframe = pd.read_csv('DATASET-16FEB2022.csv')
+dataframe = pd.read_csv('sEMG_prediction_dataset(channel_and_3Dkeypoints).csv')
 raw_data = pd.DataFrame(dataframe)#dataframe.values
 raw=raw_data.values
 
