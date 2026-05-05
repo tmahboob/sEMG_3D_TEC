@@ -24,7 +24,7 @@ from tensorflow.compat.v1 import Session as sess
 from keras.layers import Dense, SimpleRNN, Reshape
 #tf.compat.v1.disable_eager_execution()
 
-dataframe = pd.read_csv('DATASET-16FEB2022.csv')
+dataframe = pd.read_csv('sEMG_prediction_dataset(channel_and_3Dkeypoints).csv')
 #dataframe = pd.read_csv('combined_data.csv')
 
 
