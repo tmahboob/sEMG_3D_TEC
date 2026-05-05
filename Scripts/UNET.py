@@ -22,10 +22,7 @@ import tensorflow as tf
 from tensorflow.compat.v1 import Session as sess
 tf.compat.v1.disable_eager_execution()
 
-#dataframe = pd.read_csv('train-11242021.csv')
-#dataframe = pd.read_csv('filterd_50_1.csv')
-#dataframe = pd.read_csv('idea-feb15..csv')
-dataframe = pd.read_csv('DATASET-16FEB2022.csv')
+dataframe = pd.read_csv('sEMG_prediction_dataset(channel_and_3Dkeypoints).csv')
 raw_data = pd.DataFrame(dataframe)#dataframe.values
 raw=raw_data.values
 
