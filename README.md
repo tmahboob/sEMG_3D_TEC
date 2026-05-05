@@ -1,5 +1,11 @@
 # sEMG-based-3D-hand-gesture-prediction-using-Transformer-Encoder-Classifier
-3D hand gesture prediction using custom Transformer Encoder Classifier  using sEMG signals acquired from Cyton Biosensing Board and 3D keypoints via LEAP motion IR controller,
+3D hand gesture prediction using custom Transformer Encoder Classifier  using sEMG signals acquired from Cyton Biosensing Board and 3D keypoints via LEAP motion IR controller.
+
+
+Citation: Mahboob, T., Chung, M. Y., & Choi, K. W. (2023). EMG-based 3D hand gesture prediction using transformer–encoder classification. ICT Express, 9(6), 1047-1052.
+- Open Access URL for the research journal paper: https://www.sciencedirect.com/science/article/pii/S240595952300053X
+
+IEEE Dataport: https://ieee-dataport.org/documents/semg-8-channel-data-using-openbci-cyton-biosensing-board-and-3d-keypoints-using-leap
 
 # What is EMG-prediction?
 sEMG_3D_TEC is a set of DL models used for predicting 3D hand postures trained on sEMG channels as inputs and prediction 3D keypoints showing 3D hand gestures. We present a 3D hand gesture prediction application, leveraging the sEMG signal and the optical hand tracking information. A transformer–encoder classifier (TEC) module is introduced in an IPC-system to predict the 3D-hand gestures using eight monopolar channels from sEMG as input. An experimental testbed is setup to acquire, train, and predict the 3D hand gestures within a feasible range of performance. The performance has been evaluated in terms of percentage of correctly classified keypoints (PCK). PCK is measured by first estimating the euclidean distance between the actual and the predicted keypoints. The percentage of keypoints within a threshold distance value are then calculated.
@@ -29,8 +35,7 @@ Download the Main Script(sEMG_prediction), dataset(OpenBCI_leap.csv), and the re
 * UNET.py: UNET implementation
 * Data-filtered_50(CNN).py: CNN model test on sEMG
 
-Citation: Mahboob, T., Chung, M. Y., & Choi, K. W. (2023). EMG-based 3D hand gesture prediction using transformer–encoder classification. ICT Express, 9(6), 1047-1052.
 
-Open Access URL for the research journal paper: https://www.sciencedirect.com/science/article/pii/S240595952300053X
+
 
 
