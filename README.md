@@ -7,7 +7,7 @@ Citation: Mahboob, T., Chung, M. Y., & Choi, K. W. (2023). EMG-based 3D hand ges
 
 IEEE Dataport: https://ieee-dataport.org/documents/semg-8-channel-data-using-openbci-cyton-biosensing-board-and-3d-keypoints-using-leap
 
-![Process_Flow]https://github.com/tmahboob/sEMG_3D_Transofmer_Encoder_Classifier/blob/main/Process_Flow.jpg
+![Process_Flow]https://github.com/tmahboob/sEMG_3D_Transofmer_Encoder_Classifier/blob/main/Process Flow.jpg
 
 # What is EMG-prediction?
 sEMG_3D_TEC is a set of DL models used for predicting 3D hand postures trained on sEMG channels as inputs and prediction 3D keypoints showing 3D hand gestures. We present a 3D hand gesture prediction application, leveraging the sEMG signal and the optical hand tracking information. A transformer–encoder classifier (TEC) module is introduced in an IPC-system to predict the 3D-hand gestures using eight monopolar channels from sEMG as input. An experimental testbed is setup to acquire, train, and predict the 3D hand gestures within a feasible range of performance. The performance has been evaluated in terms of percentage of correctly classified keypoints (PCK). PCK is measured by first estimating the euclidean distance between the actual and the predicted keypoints. The percentage of keypoints within a threshold distance value are then calculated.
